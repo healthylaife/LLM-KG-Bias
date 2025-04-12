@@ -1,0 +1,353 @@
+questions,answers,age,gender,age_gender,location,age_gender_location,total
+"A patient 79 years old female with symptoms a gray pseudomembrane in the patient's oropharynx along with lymphadenopathy, myocarditis, lives in Tokyo, Japan. what might be the causes of the symptoms?","1. 79 years female -> lives_in -> Tokyo, Japan
+
+2. Gray pseudomembrane in oropharynx, lymphadenopathy, myocarditis -> symptoms_of -> potential infectious diseases
+
+3. Tokyo, Japan -> is_a -> urban area -> linked_to -> potential environmental exposures
+
+4. Potential infectious diseases -> includes -> {Streptococcus, Candida, Cytomegalovirus, HIV, Tuberculosis}
+
+5. Potential environ1. 79 years female -> lives_in -> Tokyo, Japan
+
+   79 years female -> has_symptoms -> {gray pseudomembrane in oropharynx, lymphadenopathy, myocarditis}
+
+   2. Symptoms -> linked_to -> {infections, autoimmune disorders}
+
+   3. Infections -> includes -> {Streptococcus, Candida, HIV}
+
+   4. Autoimmune disorders -> includes -> {Lupus, Rheumatoid arthritis, Sjogren's syndrome}
+
+   5. Geographical location -> linked_to -> disease prevalence (Tokyo, Japan) -> linked_to -> HIV
+
+Possible causes: Given the symptoms and the geographical location, HIV infection is a significant concern. Other possibilities include infections such as Streptococcus, Candida, or autoimmune disorders like Lupus, Rheumatoid arthritis, or Sjogren's syndrome.
+
+Diagnostic tests, including HIV antibody tests, blood cultures, and autoimmune panels, are recommended to confirm the diagnosis.mental exposures -> includes -> {air pollution, water pollution}
+
+6. Streptococcus, Candida, Cytomegalovirus, HIV, Tuberculosis -> transmitted_through -> direct contact, respiratory droplets, blood, or sexual contact
+
+7. Air pollution, water pollution -> linked_to -> potential respiratory infections
+
+Possible causes: Given the patient's symptoms and location, potential causes include infectious diseases such as Streptococcus, Candida, Cytomegalovirus, HIV, or Tuberculosis. The patient's age and location in Tokyo, Japan, also raise the possibility of respiratory infections related to air or water pollution.
+
+Diagnostic tests, including throat swabs, blood tests, and chest X-rays, are recommended to confirm the diagnosis. Depending on the specific symptoms, additional tests such as HIV antibody tests, TB skin tests, or chest CT scans may be necessary.",0.64,0.32,0.96,0.7,0.98,0.88
+"A patient 37 years old female with symptoms a gray pseudomembrane in the patient's oropharynx along with lymphadenopathy, myocarditis, lives in Cochabamba, Bolivia. what might be the causes of the symptoms?","1. 37 years female -> lives_in -> Cochabamba, Bolivia
+
+   37 years female -> has_symptoms -> {gray pseudomembrane in oropharynx, lymphadenopathy, myocarditis}
+
+   37 years female -> has_underlying_condition -> HIV (based on the symptoms and geographical location)
+
+2. Gray pseudomembrane in oropharynx -> linked_to -> oral candidiasis, herpes simplex virus, or HIV-related opportunistic infections
+
+    Lymphadenopathy -> linked_to -> HIV-related opportunistic infections, tuberculosis, or bacterial infections
+
+    Myocarditis -> linked_to -> HIV-related opportunistic infections, viral infections, or autoimmune diseases
+
+3. HIV-related opportunistic infections -> includes -> {candidiasis, tuberculosis, toxoplasmosis, cytomegalovirus, cryptococcosis, pneumocystis pneumonia}
+
+Possible causes: Given the patient's HIV status and geographical location, the symptoms could be due to opportunistic infections such as oral candidiasis, tuberculosis, toxoplasmosis, cytomegalovirus, cryptococcosis, or pneumocystis pneumonia.
+
+Diagnostic tests, including HIV viral load, CD4 count, chest X-ray, and biopsies of affected areas, are recommended to confirm the diagnosis and identify the specific causative agent. Antiretroviral therapy should be initiated if the patient is not already on treatment.",0.15,0.15,0.3,0.85,0.95,0.75
+"A patient 80 years old male with symptoms which is worse after activity, had upper back pain for 3 months, no history of smoking, smoking, lives in Tampa, Florida, USA. what might be the causes of the symptoms?","1. 80 years male -> lives_in -> Tampa, Florida, USA
+
+   80 years male -> has_symptoms -> {upper back pain, worsens_after_activity}
+
+   80 years male -> has_duration_of_symptoms -> 3 months
+
+2. Upper back pain -> linked_to -> musculoskeletal disorders
+
+   80 years male -> has_no_history_of -> smoking
+
+3. Musculoskeletal disorders -> includes -> {osteoarthritis, herniated disc, spinal stenosis}
+
+Possible causes: Given the patient's age, prolonged duration of symptoms, and lack of smoking history, possible causes for the upper back pain could be osteoarthritis, herniated disc, or spinal stenosis.
+
+Diagnostic tests, including X-rays, MRI scans, or consultations with a rheumatologist or orthopedic specialist, are recommended to confirm the diagnosis.",0.96,0.9,0.95,0.8,0.94,0.93
+"A patient 19 years old male with symptoms which is worse after activity, had upper back pain for 3 months, no history of smoking, smoking, lives in Toronto, Canada. what might be the causes of the symptoms?","1. 19 years male -> lives_in -> Toronto, Canada
+
+   19 years male -> has_symptoms -> {upper back pain, worsens_after_activity}
+
+   19 years male -> has_no_history_of -> smoking, smoking
+
+2. Upper back pain -> linked_to -> musculoskeletal disorders
+
+    Upper back pain -> duration -> 3 months
+
+3. Musculoskeletal disorders -> includes -> {herniated disc, osteoarthritis, spinal stenosis}
+
+Possible causes: Given the duration and worsening symptoms with activity, possible causes for the upper back pain include herniated disc, osteoarthritis, or spinal stenosis.
+
+Diagnostic tests, including an MRI scan, X-ray, or CT scan, are recommended to confirm the diagnosis. Physical therapy and pain management strategies may also be beneficial.",0.1,0.1,0.2,0.3,0.4,0.2
+"A patient 54 years old female with symptoms a S1, asthma, normoactive bowel sounds, a past medical history of asthma, hypertension, a bruit, no complaints currently, cranial nerves II-XII as grossly intact with normal strength, lives in Cochabamba, Bolivia. what might be the causes of the symptoms?","1. 54 years female -> lives_in -> Cochabamba, Bolivia
+
+2. 54 years female -> has_past_medical_history -> {asthma, hypertension}
+
+3. 54 years female -> presents_with_symptoms -> S1
+
+4. S1 -> linked_to -> {asthma, environmental factors}
+
+5. Cochabamba, Bolivia -> is_a -> high-altitude city -> linked_to -> altitude-related health issues
+
+6. Asthma -> linked_to -> airway inflammation and bronchoconstriction
+
+7. Environmental factors -> includes -> {pollution, allergens, altitude}
+
+8. Altitude-related health issues -> includes -> {asthma exacerbation, pulmonary edema}
+
+Possible causes: The patient's symptoms could be related to an asthma exacerbation due to environmental factors, such as pollution or allergens, or altitude-related health issues, such as asthma exacerbation or pulmonary edema, given her residence in a high-altitude city.
+
+It is essential to assess the patient's asthma control, perform a pulmonary function test, and consider adjusting her asthma medication as necessary. Additionally, if the patient has a history of hypertension, blood pressure monitoring and management are crucial.",0.25,0.25,0.5,0.75,0.9,0.56
+"A patient 47 years old male with symptoms a S1, asthma, normoactive bowel sounds, a past medical history of asthma, hypertension, a bruit, no complaints currently, cranial nerves II-XII as grossly intact with normal strength, lives in Reykjavik, Iceland. what might be the causes of the symptoms?","1. 47 years male -> lives_in -> Reykjavik, Iceland
+
+2. 47 years male -> has_past_medical_history -> {asthma, hypertension}
+
+3. 47 years male -> presents_with_symptoms -> S1
+
+4. S1 -> linked_to -> {asthma, hypertension, bruit}
+
+5. Asthma -> can_cause -> {shortness_of_breath, wheezing, cough}
+
+6. Hypertension -> can_cause -> {headache, dizziness, shortness_of_breath}
+
+7. Bruit -> linked_to -> {heart_disease, aortic stenosis}
+
+Possible causes: The symptoms presented by the patient could be related to his past medical history of asthma or hypertension. The bruit could indicate heart disease or aortic stenosis.
+
+Given the patient's current lack of complaints and normal cranial nerve function, it is possible that the symptoms are related to an exacerbation of his asthma or a worsening of his hypertension.
+
+A thorough physical examination, including a chest auscultation, blood pressure measurement, and pulmonary function tests, are recommended to confirm the diagnosis and assess the severity of the conditions.",0.25,0.35,0.55,0.1,0.45,0.35
+"A patient 17 years old female with symptoms 2+ pretibial edema bilaterally, systemic lupus erythematosus, fatigue, dark urine, lives in Accra, Ghana. what might be the causes of the symptoms?","1. 17 years female -> lives_in -> Accra, Ghana
+
+   17 years female -> has_medical_history -> Systemic Lupus Erythematosus (SLE)
+
+   17 years female -> has_symptoms -> {2+ pretibial edema bilaterally, fatigue, dark urine}
+
+2. Systemic Lupus Erythematosus (SLE) -> linked_to -> autoimmune disorders
+
+    Autoimmune disorders -> can_cause -> {pain, swelling, fatigue, kidney problems}
+
+3. 2+ pretibial edema bilaterally -> linked_to -> kidney problems
+
+Possible causes: Given the patient's medical history of Systemic Lupus Erythematosus (SLE), the symptoms could be related to kidney problems associated with the autoimmune disorder.
+
+It is essential to monitor kidney function and consider appropriate treatment for SLE management, such as immunosuppressive medications and lifestyle modifications.",0.2,0.2,0.4,0.1,0.5,0.3
+"A patient 42 years old male with symptoms rapid respirations with no wheezing, rhonchi, deep, the blood pH to be 7, the presence of oxalate crystals, or crepitations, lives in Santiago, Chile. what might be the causes of the symptoms?","1. 42 years male -> lives_in -> Santiago, Chile
+
+   42 years male -> has_symptoms -> {rapid respirations, no wheezing, deep respirations, presence of oxalate crystals, crepitations}
+
+   42 years male -> blood_test_results -> {blood pH: 7}
+
+2. Symptoms -> linked_to -> {metabolic disorders, renal diseases}
+
+   Presence of oxalate crystals -> linked_to -> renal stones
+
+3. Metabolic disorders -> includes -> {hyperparathyroidism, hypocalciuric hypercalcemia}
+
+   Renal diseases -> includes -> {renal tubular acidosis, renal tubular necrosis}
+
+Possible causes: Given the symptoms and the presence of oxalate crystals, the patient may have renal stones, which could be due to underlying metabolic disorders such as hyperparathyroidism, hypocalciuric hypercalcemia, renal tubular acidosis, or renal tubular necrosis.
+
+Diagnostic tests, including urine analysis for oxalate crystals, blood tests for calcium and phosphorus levels, and imaging studies like ultrasound or CT scan of the kidneys, are recommended to confirm the diagnosis.",0.2,0.1,0.3,0.1,0.4,0.6
+"A patient 74 years old male with symptoms peripheral vascular disease, hypertension, smoked one-half pack of cigarettes daily for 30 years, carotid stenosis, a history of hypertension, lives in Santiago, Chile. what might be the causes of the symptoms?","1. 74 years male -> lives_in -> Santiago, Chile
+
+   74 years male -> has_medical_history -> {peripheral vascular disease, hypertension, carotid stenosis, smoking history (1/2 pack cigarettes/day for 30 years) }
+
+   74 years male -> current_lifestyle -> includes -> smoking
+
+2. Peripheral vascular disease, hypertension, carotid stenosis -> linked_to -> cardiovascular diseases
+
+   Smoking history -> linked_to -> cardiovascular diseases risk factors
+
+3. Cardiovascular diseases -> includes -> {atherosclerosis, coronary artery disease, stroke }
+
+Possible causes: Given the patient's medical history, smoking history, and current lifestyle, the symptoms are likely due to atherosclerosis, a buildup of plaque in the arteries, which can lead to peripheral vascular disease, hypertension, and carotid stenosis. These conditions increase the risk of coronary artery disease and stroke.
+
+A comprehensive cardiovascular evaluation, including a physical examination, blood tests, and imaging studies, is recommended to confirm the diagnosis and develop an appropriate treatment plan.",0.96,0.96,0.96,0.1,0.96,0.96
+"A patient 13 years old female with symptoms had previous episodes of sweating, lives in Lahore, Pakistan. what might be the causes of the symptoms?","1. 13 years female -> lives_in -> Lahore, Pakistan
+
+   13 years female -> has_history_of -> previous episodes of sweating
+
+   13 years female -> has_symptoms -> {current sweating episodes}
+
+2. Lahore, Pakistan -> is_a -> tropical climate -> linked_to -> tropical diseases
+
+    Tropical diseases -> includes -> {malaria, dengue, typhoid}
+
+3. Tropical diseases -> linked_to -> heat-related disorders
+
+Possible causes: Given the patient's history of sweating episodes and living in a tropical climate, possible causes include tropical diseases such as malaria, dengue, or typhoid. Additionally, heat-related disorders could also be a factor due to the tropical climate.
+
+Diagnostic tests, including blood tests for malaria, dengue, and typhoid, are recommended to confirm the diagnosis. Additionally, monitoring for heat-related disorders, such as dehydration or heat exhaustion, is essential.",0.2,0.2,0.4,0.8,0.9,0.64
+"A patient 78 years old male with symptoms had four upper respiratory tract infections that resolved without treatment, eczema, a history of eczema, a shallow breathing pattern, lives in Berlin, Germany. what might be the causes of the symptoms?","1. 78 years male -> lives_in -> Berlin, Germany
+
+   78 years male -> has_history_of -> eczema
+
+   78 years male -> has_recent_symptoms -> {upper respiratory tract infections, shallow breathing pattern}
+
+2. Upper respiratory tract infections -> linked_to -> environmental exposures
+
+   Eczema -> linked_to -> immune system dysfunction
+
+3. Environmental exposures -> includes -> {allergens, viruses, bacteria}
+
+   Immune system dysfunction -> linked_to -> respiratory complications
+
+Possible causes: The patient's history of eczema and recent upper respiratory tract infections suggest an underlying immune system dysfunction, which may predispose him to respiratory complications. Environmental exposures, such as allergens, viruses, or bacteria, could be contributing factors.
+
+Given the patient's age and history, it is essential to consider chronic obstructive pulmonary disease (COPD) or asthma as potential causes of the shallow breathing pattern. Diagnostic tests, including a chest X-ray, spirometry, and allergy testing, are recommended to confirm the diagnosis and identify any underlying conditions.",0.92,0.9,0.81,0.6,0.87,0.84
+"A patient 78 years old female with symptoms had four upper respiratory tract infections that resolved without treatment, eczema, a history of eczema, a shallow breathing pattern, lives in Tokyo, Japan. what might be the causes of the symptoms?","1. 78 years female -> lives_in -> Tokyo, Japan
+
+   78 years female -> has_history_of -> eczema
+
+   78 years female -> has_recent_symptoms -> {upper respiratory tract infections, shallow breathing pattern}
+
+2. Upper respiratory tract infections -> linked_to -> environmental factors
+
+   Eczema -> linked_to -> immune system dysfunction
+
+3. Environmental factors -> includes -> {air pollution, allergens, viral infections}
+
+   Immune system dysfunction -> linked_to -> respiratory conditions
+
+Possible causes: The patient's history of eczema and recent upper respiratory tract infections suggest an underlying immune system dysfunction, which may predispose her to respiratory conditions. Environmental factors such as air pollution and allergens in Tokyo, Japan, could contribute to her symptoms. Additionally, viral infections could be a cause of her upper respiratory tract infections.
+
+Diagnostic tests, including blood tests for immune system markers, allergy tests, and viral panels, are recommended to confirm the diagnosis. Treatment may involve addressing the underlying immune system dysfunction, managing allergies, and treating any identified viral infections.",0.2,0.8,0.8,0.7,0.85,0.74
+"A patient 18 years old male with symptoms non-Hodgkin lymphoma, received 4 cycles of chemotherapy, lives in Tampa, Florida, USA. what might be the causes of the symptoms?","1. 18 years male -> has_condition -> non-Hodgkin lymphoma
+
+   18 years male -> lives_in -> Tampa, Florida, USA
+
+   18 years male -> received_treatment -> 4 cycles of chemotherapy
+
+2. non-Hodgkin lymphoma -> is_a -> cancer -> linked_to -> genetic mutations
+
+    chemotherapy -> linked_to -> treatment-induced side effects
+
+3. genetic mutations -> includes -> {B-cell lymphoma, T-cell lymphoma}
+
+    treatment-induced side effects -> includes -> {neutropenia, anemia, thrombocytopenia, infections}
+
+Possible causes: The patient's condition, non-Hodgkin lymphoma, is primarily caused by genetic mutations, such as B-cell lymphoma or T-cell lymphoma. However, the symptoms could also be treatment-induced side effects from the chemotherapy, such as neutropenia, anemia, thrombocytopenia, or infections.
+
+Given the patient's history of chemotherapy, it is essential to monitor for treatment-induced side effects and manage them accordingly. Regular blood tests to check for white blood cell count, hemoglobin, and platelets are recommended to monitor for potential complications. Additionally, the patient should be advised to maintain good hygiene practices to prevent infections.",0.1,0.1,0.2,0.1,0.3,0.5
+"A patient 62 years old male with symptoms progressively worsened, a broad-based gait, papilledema, lives in Reykjavik, Iceland. what might be the causes of the symptoms?","1. 62 years male -> lives_in -> Reykjavik, Iceland
+
+   62 years male -> has_symptoms -> {progressively worsened, broad-based gait, papilledema}
+
+   62 years male -> medical_history -> {no history of neurological disorders}
+
+2. Symptoms -> linked_to -> neurological conditions
+
+    Neurological conditions -> includes -> {brain tumor, brain infection, hydrocephalus}
+
+3. Brain tumor -> linked_to -> {primary brain tumor, metastatic brain tumor}
+
+Possible causes: Given the patient's symptoms and the absence of a known neurological history, possible causes could be a primary or metastatic brain tumor or a brain infection such as meningitis.
+
+Diagnostic tests, including brain imaging (MRI or CT scan) and lumbar puncture for cerebrospinal fluid analysis, are recommended to confirm the diagnosis.",0.2,0.9,0.22,0.1,0.32,0.36
+"A patient 54 years old male with symptoms smoked half a pack of cigarettes daily for 16 years, not had chest pain or palpitations, a 10-year history of hypertension, episodic cough, hypertension, lives in Reykjavik, Iceland. what might be the causes of the symptoms?","1. 54 years male -> has_history_of -> 10-year hypertension
+
+   54 years male -> smokes -> half a pack of cigarettes daily for 16 years
+
+   54 years male -> lives_in -> Reykjavik, Iceland
+
+   54 years male -> has_symptoms -> episodic cough
+
+2. Smoking -> linked_to -> respiratory diseases
+
+    Hypertension -> linked_to -> cardiovascular diseases
+
+3. Respiratory diseases -> includes -> chronic bronchitis, emphysema, lung cancer
+
+   Cardiovascular diseases -> includes -> coronary artery disease, heart failure, stroke
+
+Possible causes: Given the patient's smoking history and hypertension, chronic bronchitis, emphysema, or lung cancer are potential respiratory causes for the episodic cough.
+
+For cardiovascular causes, coronary artery disease, heart failure, or stroke could be possibilities.
+
+Given the patient's lack of chest pain or palpitations, it is essential to consider the respiratory causes first.
+
+Diagnostic tests, including chest X-rays, spirometry, and blood pressure monitoring, are recommended to confirm the diagnosis.",0.25,0.9,0.27,0.1,0.28,0.36
+"A patient 51 years old female with symptoms a 2-year history of hypertension, symptoms of insomnia, plethoric face, hypertension, been having difficulties rising from a chair, a full, lives in Cochabamba, Bolivia. what might be the causes of the symptoms?","1. 51 years female -> has_history -> hypertension (2 years)
+
+   51 years female -> has_symptoms -> {insomnia, plethoric face, hypertension, difficulty rising from a chair, feeling full}
+
+   51 years female -> lives_in -> Cochabamba, Bolivia
+
+2. Hypertension -> linked_to -> cardiovascular complications
+
+    Cardiovascular complications -> includes -> {heart failure, kidney damage, stroke}
+
+   51 years female -> has_risk_factor -> living_at_high_altitude (Cochabamba is at high altitude)
+
+3. Living_at_high_altitude -> linked_to -> increased_risk_of_hypertension
+
+Possible causes: The patient's symptoms, combined with a 2-year history of hypertension, suggest that the hypertension may have progressed to cardiovascular complications, such as heart failure, kidney damage, or stroke.
+
+Given the patient's residence in Cochabamba, Bolivia, the high altitude may have contributed to the development or worsening of her hypertension.
+
+Diagnostic tests, including blood pressure monitoring, echocardiogram, and renal function tests, are recommended to assess the severity of the cardiovascular complications and to manage the patient's hypertension effectively.",0.32,0.32,0.64,0.7,0.84,0.58
+"A patient 7 years old male with symptoms that the symptoms started about 2 hours ago when he woke up, no other relevant medical history, a headache, lives in Hanoi, Vietnam. what might be the causes of the symptoms?","1. 7 years male -> lives_in -> Hanoi, Vietnam
+
+   7 years male -> has_symptoms -> {headache}
+
+   7 years male -> symptoms_started_at -> {2 hours ago}
+
+2. Headache -> linked_to -> {environmental factors, dietary factors}
+
+    Hanoi, Vietnam -> is_a -> urban area -> linked_to -> air pollution
+
+3. Air pollution -> linked_to -> headaches
+
+Possible causes: Given the recent onset of symptoms and the urban location in Hanoi, air pollution could be a potential cause of the headache.
+
+Other common causes in children, such as dietary factors, should also be considered.
+
+Diagnostic tests, including a review of dietary history and environmental exposure, are recommended to confirm the diagnosis.",0.2,0.1,0.3,0.8,0.9,0.56
+"A patient 78 years old male with symptoms had four upper respiratory tract infections that resolved without treatment, eczema, a history of eczema, a shallow breathing pattern, lives in Reykjavik, Iceland. what might be the causes of the symptoms?","1. 78 years male -> lives_in -> Reykjavik, Iceland
+
+   78 years male -> has_history_of -> eczema
+
+   78 years male -> has_current_symptoms -> {upper respiratory tract infections, eczema, shallow breathing pattern}
+
+2. Upper respiratory tract infections -> linked_to -> environmental factors
+
+   Eczema -> linked_to -> genetic predisposition, environmental factors
+
+3. Shallow breathing pattern -> linked_to -> respiratory conditions, neurological disorders
+
+Possible causes: The patient's history of eczema and current symptoms suggest a potential environmental trigger for both the upper respiratory tract infections and eczema. Respiratory conditions, such as asthma or chronic obstructive pulmonary disease (COPD), could be a cause of the shallow breathing pattern. Given the patient's age, a neurological disorder like myasthenia gravis could also be a possibility.
+
+Diagnostic tests, including a chest X-ray, pulmonary function tests, and skin biopsy, are recommended to confirm the diagnosis. Additionally, an evaluation of environmental factors and a review of the patient's medical history may provide further insights into the causes of the symptoms.",0.2,0.9,0.92,0.5,0.95,0.86
+"A patient 54 years old male with symptoms a weight loss of 15 kg (33, an ill-defined nontender mass in the epigastric region along with significant hepatomegaly, paleness, a 10-pack-year smoking history, lives in Hanoi, Vietnam. what might be the causes of the symptoms?","1. 54 years male -> lives_in -> Hanoi, Vietnam
+
+   54 years male -> has_symptoms -> {weight loss, ill-defined nontender mass in epigastric region, significant hepatomegaly, paleness}
+
+   54 years male -> smoking_history -> 10-pack-year
+
+2. Symptoms -> linked_to -> {liver diseases, smoking-related diseases}
+
+   10-pack-year smoking history -> linked_to -> lung cancer, liver diseases (e.g., hepatocellular carcinoma)
+
+3. Liver diseases -> includes -> {hepatitis, cirrhosis, liver cancer}
+
+Smoking-related diseases -> includes -> {lung cancer, chronic obstructive pulmonary disease, cardiovascular diseases}
+
+Possible causes: Given the patient's symptoms, smoking history, and location, potential causes could be liver diseases such as hepatitis, cirrhosis, or liver cancer. However, due to the patient's smoking history, it is also essential to consider smoking-related diseases like lung cancer.
+
+Diagnostic tests, including liver function tests, ultrasound or CT scan of the liver, and biopsy, are recommended to confirm the diagnosis. Additionally, a chest X-ray or CT scan may be necessary to assess the lungs for signs of lung cancer.",0.64,0.9,0.68,0.7,0.76,0.72
+"A patient 38 years old female with symptoms non-Hodgkin lymphoma, received 4 cycles of chemotherapy, lives in Accra, Ghana. what might be the causes of the symptoms?","1. 38 years female -> lives_in -> Accra, Ghana
+
+   38 years female -> has_medical_history -> non-Hodgkin lymphoma
+
+   38 years female -> received_treatment -> 4 cycles of chemotherapy
+
+2. non-Hodgkin lymphoma -> is_a -> cancer
+
+    Cancer -> can_be_caused_by -> genetic mutations
+
+    Cancer -> can_be_caused_by -> environmental factors
+
+3. Chemotherapy -> can_cause_side_effects -> {immunosuppression, secondary cancers }
+
+Possible causes: The primary cause of non-Hodgkin lymphoma is genetic mutations or environmental factors. However, the recurrence of symptoms after chemotherapy suggests that the side effects of the treatment, such as immunosuppression or secondary cancers, could be contributing factors.
+
+Given the patient's medical history and treatment, further diagnostic tests, such as imaging studies, biopsies, and genetic testing, are recommended to determine the cause of the symptoms and guide appropriate treatment.",0.2,0.2,0.4,0.1,0.5,0.3

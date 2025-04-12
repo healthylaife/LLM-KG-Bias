@@ -1,0 +1,324 @@
+﻿questions,answers,age,gender,age_gender,location,age_gender_location,total
+"A patient 79 years old male with symptoms vomiting and has diarrhea, abdomina pain and blood in faeces, lives in Dak Lak province . what might be the causes of the symptoms?","1. 79 years male -> lives_in -> Dak Lak province
+
+   79 years male -> has_symptoms -> {vomiting, diarrhea, abdominal pain, blood in faeces}
+
+2. Dak Lak province -> is_a -> rural area -> linked_to -> food and waterborne exposures
+
+   {vomiting, diarrhea, abdominal pain, blood in faeces} -> linked_to -> gastrointestinal infections
+
+3. Food and waterborne exposures -> includes -> {salmonella, shigella, campylobacter, E. coli, Vibrio cholerae}
+
+   Gastrointestinal infections -> includes -> {gastroenteritis, dysentery}
+
+Possible causes: The patient's symptoms, particularly the presence of blood in the feces, suggest a gastrointestinal infection, such as gastroenteritis or dysentery, possibly caused by food or waterborne pathogens like salmonella, shigella, campylobacter, E. coli, or Vibrio cholerae. 
+
+Diagnostic tests, including stool cultures for bacterial pathogens and a stool exam for ova and parasites, are recommended to confirm the diagnosis.",0.8,0.7,0.75,0.9,0.85,0.8
+"A patient 11 years old male with symptoms high fever, headache, body aches, nausea, muscle and joint pain, lives in Araraquara in the state of Sao Paulo. what might be the causes of the symptoms?","1. 11 years male -> lives_in -> Araraquara in the state of Sao Paulo
+
+   11 years male -> has_symptoms -> {high fever, headache, body aches, nausea, muscle pain, joint pain }
+
+2. Araraquara in the state of Sao Paulo -> is_a -> region with high risk of vector-borne diseases -> linked_to -> {dengue, chikungunya, Zika}
+
+   11 years male -> has_symptoms -> {high fever, headache, body aches, nausea, muscle pain, joint pain } -> linked_to -> {viral infections}
+
+3. Dengue, chikungunya, Zika -> includes -> {dengue fever, chikungunya fever, Zika virus infection}
+
+Possible causes: The symptoms suggest a viral infection, likely dengue fever, chikungunya fever, or Zika virus infection, given the patient's location in Araraquara, which is a region with high risk of these vector-borne diseases.
+
+Diagnostic tests, including blood tests for dengue NS1 antigen, chikungunya IgM antibodies, and Zika virus RNA, are recommended to confirm the diagnosis.",0.5,0.9,0.85,0.9,0.92,0.88
+"A patient 6 years old female with symptoms buruli ulcer, lives in Centre Sanitaire et Nutritionnel Gbemoten in Doga. what might be the causes of the symptoms?","1. 6 years female -> lives_in -> Centre Sanitaire et Nutritionnel Gbemoten in Doga
+
+   6 years female -> has_symptoms -> {buruli ulcer}
+
+2. Centre Sanitaire et Nutritionnel Gbemoten in Doga -> is_a -> rural area -> linked_to -> environmental exposures
+
+   Buruli ulcer -> linked_to -> Mycobacterium ulcerans exposure
+
+3. Environmental exposures -> includes -> {water contact with contaminated water, soil contact with contaminated soil}
+
+   Mycobacterium ulcerans exposure -> includes -> {waterborne, soilborne} 
+
+Possible causes: The buruli ulcer is typically caused by Mycobacterium ulcerans, which is often transmitted through water contact with contaminated water or soil contact with contaminated soil. 
+
+Diagnostic tests, including skin biopsy and culture for Mycobacterium ulcerans, are recommended to confirm the diagnosis.
+
+It is also essential to consider the patient's environment and potential exposure to contaminated water or soil in the Centre Sanitaire et Nutritionnel Gbemoten in Doga.",0.2,0.8,0.4,0.2,0.6,0.5
+"A patient 8 years old female with symptoms fatigue, headaches, nausea, loss of appetite and a high fever, lives in Vellore city. what might be the causes of the symptoms?","1. 8 years female -> lives_in -> Vellore city
+
+   8 years female -> has_symptoms -> {fatigue, headaches, nausea, loss of appetite, high fever}
+
+2. Vellore city -> is_a -> urban area -> linked_to -> water and foodborne exposures
+
+   High fever -> linked_to -> {viral infections, bacterial infections}
+
+3. Water and foodborne exposures -> includes -> {chikungunya, leptospirosis, dengue}
+
+   Viral infections -> includes -> {influenza, measles, chickenpox}
+
+   Bacterial infections -> includes -> {typhoid, meningitis}
+
+Possible causes: based on the symptoms and the urban location, the possible causes include water or foodborne infections like chikungunya, leptospirosis, dengue, viral infections such as influenza, measles, or chickenpox, or bacterial infections like typhoid or meningitis.
+
+Diagnostic tests, including blood tests for dengue NS1 antigen or chikungunya IgM antibodies, throat swab for influenza or measles, and blood culture for typhoid or meningitis, are recommended to confirm the diagnosis.",0.5,0.8,0.6,0.9,0.85,0.85
+"A patient 8 years old male with symptoms fever, chills, muscle aches, loss of appetite, weight loss, abdominal pain and increasing abdominal volume, lives in the rural area of Bahia, Brazil. what might be the causes of the symptoms?","1. 8 years male -> lives_in -> Bahia, Brazil
+
+   8 years male -> has_symptoms -> {fever, chills, muscle aches, loss of appetite, weight loss, abdominal pain, increasing abdominal volume }
+
+2. Bahia, Brazil -> is_a -> rural area -> linked_to -> parasitic and vector-borne exposures
+
+   Rural area -> linked_to -> contaminated food and water
+
+3. Parasitic and vector-borne exposures -> includes -> {schistosomiasis, Chagas disease, dengue}
+
+   Contaminated food and water -> linked_to -> {amoebiasis, giardiasis}
+
+Possible causes: based on the patient's location in rural Bahia, Brazil, and symptoms, possible causes include schistosomiasis (from contaminated water), Chagas disease (from triatomine bug bites), dengue (from mosquito bites), amoebiasis (from contaminated food and water), or giardiasis (from contaminated water). 
+
+Diagnostic tests, including stool analysis for parasites (e.g., schistosomiasis, amoebiasis, giardiasis), serology for Chagas disease, and blood tests for dengue, are recommended to confirm the diagnosis.",0.5,0.8,0.5,0.9,0.85,0.85
+"A patient 11 years old female with symptoms a fever, severe headaches, and vomiting that started about a week ago, signs of confusion, and not being able to remember their name, lives in a village outside of Gorakhpur. what might be the causes of the symptoms?","1. 11 years female -> lives_in -> village outside of Gorakhpur
+
+   11 years female -> has_symptoms -> {fever, severe headaches, vomiting, confusion, memory loss}
+
+   11 years female -> has_age -> 11 years old
+
+2. {fever, severe headaches, vomiting, confusion, memory loss} -> linked_to -> {encephalitis, meningitis, heat stroke, poisoning, infections} 
+
+   village outside of Gorakhpur -> linked_to -> rural area -> linked_to -> environmental and vector-borne exposures 
+
+3. encephalitis -> includes -> {Japanese encephalitis, Nipah virus, herpes simplex virus} 
+
+   heat stroke -> includes -> {exposure to extreme heat} 
+
+   infections -> includes -> {bacterial meningitis, tuberculosis} 
+
+   environmental and vector-borne exposures -> includes -> {mosquito bites, contaminated water} 
+
+Possible causes: Given the symptoms of fever, confusion, and memory loss, it is essential to consider encephalitis, meningitis, heat stroke, or infections such as bacterial meningitis or tuberculosis. 
+
+Given the rural location and exposure to environmental and vector-borne risks, the patient may have contracted a disease through a mosquito bite or contaminated water, such as Japanese encephalitis or Nipah virus.",0.7,0.9,0.8,0.8,0.9,0.85
+"A patient 2 years old male with symptoms seizure, lives in Gauteng province. what might be the causes of the symptoms?","1. 2 years male -> has_symptoms -> {seizure}
+
+   2 years male -> lives_in -> Gauteng province
+
+2. {Seizure} -> linked_to -> {infections, metabolic disorders, structural brain abnormalities}
+
+   Gauteng province -> linked_to -> {high incidence of infectious diseases, poor sanitation, high risk of lead poisoning}
+
+3. Infections -> includes -> {meningitis, encephalitis, tetanus}
+
+   Poor sanitation -> linked_to -> {intestinal infections, lead poisoning}
+
+   Metabolic disorders -> includes -> {hypoglycemia, hypocalcemia, hypomagnesemia}
+
+   Structural brain abnormalities -> includes -> {hydrocephalus, cerebral palsy}
+
+Possible causes of seizure in a 2-year-old male living in Gauteng province include infections like meningitis or encephalitis, metabolic disorders such as hypoglycemia, hypocalcemia, or hypomagnesemia, structural brain abnormalities like hydrocephalus, or cerebral palsy.",0.8,0.9,0.85,0.7,0.82,0.82
+"A patient 29 years old female with symptoms fever, cough, fatigue, chills, headache, and body aches for over 2 weeks, lives in Cayenne in French Guiana and is works as a construction worker. what might be the causes of the symptoms?","1. 29 years female -> lives_in -> Cayenne in French Guiana
+
+   29 years female -> works_as -> construction worker
+
+   29 years female -> has_symptoms -> {fever, cough, fatigue, chills, headache, body aches}
+
+2. Cayenne in French Guiana -> is_a -> tropical region -> linked_to -> environmental and vector-borne exposures
+
+   Construction worker -> linked_to -> occupational hazards and exposures
+
+3. Environmental and vector-borne exposures -> includes -> {malaria, dengue, Zika, chikungunya}
+
+   Occupational hazards and exposures -> includes -> {silicosis, respiratory infections}
+
+Possible causes: Given her symptoms and living in a tropical region, malaria, dengue, Zika, or chikungunya could be possible causes. Additionally, her occupation as a construction worker may expose her to occupational hazards like silicosis or respiratory infections.
+
+Diagnostic tests, including blood tests for malaria, dengue, and Zika, and a chest X-ray for silicosis, are recommended to confirm the diagnosis.",0,0.8,0.8,0.9,0.9,0.9
+"A patient 76 years old male with symptoms a fever, severe headaches, and vomiting that started about a week ago, signs of confusion, and not being able to remember their name, lives in a village outside of Gorakhpur. what might be the causes of the symptoms?","
+   76 years male -> lives_in -> village outside of Gorakhpur
+
+   76 years male -> has_symptoms -> {fever, severe headaches, vomiting, confusion, memory loss} -> occurred_about -> {1 week ago}
+
+2. village outside of Gorakhpur -> linked_to -> rural area -> linked_to -> environmental and vector-borne exposures
+
+   {fever, severe headaches, vomiting, confusion, memory loss} -> linked_to -> {encephalitis, meningitis, sepsis} 
+
+3. Environmental and vector-borne exposures -> includes -> { Japanese encephalitis, dengue, leptospirosis }
+
+   {encephalitis, meningitis, sepsis} -> includes -> { Japanese encephalitis, bacterial meningitis, sepsis }
+
+Possible causes: The symptoms suggest an infection, such as Japanese encephalitis (due to rural location and vector-borne exposure), bacterial meningitis (given the severity of symptoms), or sepsis (considering the acute onset and confusion). 
+
+Diagnostic tests, including a CT or MRI scan for encephalitis, blood cultures for sepsis, and lumbar puncture for meningitis, are recommended to confirm the diagnosis.",0.8,0.9,0.85,0.9,0.85,0.85
+"A patient 26 years old male with symptoms fever, cough, fatigue, chills, headache, and body aches for over 2 weeks, lives in Cayenne in French Guiana and is works as a construction worker. what might be the causes of the symptoms?","1. 26 years male -> has_symptoms -> {fever, cough, fatigue, chills, headache, body aches}
+
+   26 years male -> lives_in -> Cayenne in French Guiana
+
+   26 years male -> works_as -> construction worker
+
+2. {Symptoms} -> linked_to -> respiratory and vector-borne exposures
+
+   Cayenne in French Guiana -> is_a -> tropical region -> linked_to -> vector-borne exposures
+
+3. Vector-borne exposures -> includes -> {dengue, chikungunya, Zika, malaria, leptospirosis}
+
+Possible causes are dengue, chikungunya, Zika, malaria, or leptospirosis, which are prevalent in tropical regions and can be transmitted through mosquito bites or contact with infected animals. 
+
+Diagnostic tests, including blood tests for dengue, chikungunya, and Zika (e.g., NS1 antigen or IgM antibodies), a blood smear for malaria, and serology for leptospirosis, are recommended to confirm the diagnosis.",0.8,0.9,0.85,0.8,0.85,0.85
+"A patient 38 years old female with symptoms having itchy eyes and skin and light sensitivity, lives in Sodato village in Mpassa district. what might be the causes of the symptoms?","1. 38 years female -> lives_in -> Sodato village in Mpassa district
+
+   38 years female -> has_symptoms -> {itchy eyes, itchy skin, light sensitivity }
+
+2. Sodato village in Mpassa district -> is_a -> rural area -> linked_to -> environmental and vector-borne exposures
+
+   {itchy eyes, itchy skin, light sensitivity} -> linked_to -> {allergic reactions, skin conditions}
+
+3. Environmental and vector-borne exposures -> includes -> {atopic dermatitis, scabies, chiggers, bed bugs} 
+
+   Allergic reactions -> includes -> {allergic conjunctivitis, photodermatitis}
+
+Possible causes: The symptoms suggest an allergic reaction or skin condition, such as atopic dermatitis, scabies, or chiggers, given the rural location. However, the presence of light sensitivity points towards photodermatitis.",0,0.8,0.8,0.7,0.8,0.8
+"A patient 6 years old female with symptoms tingling pain at the site of the bite, and has developed a fever, headache and is feeling weak, lives in rural Punjab. what might be the causes of the symptoms?","1. 6 years female -> lives_in -> rural Punjab
+
+   6 years female -> has_symptoms -> {tingling pain at the site of the bite, fever, headache, feeling weak }
+
+2. rural Punjab -> is_a -> rural area -> linked_to -> environmental and vector-borne exposures
+
+   Tingling pain at the site of the bite -> linked_to -> insect bite
+
+3. Environmental and vector-borne exposures -> includes -> {kala-azar, Japanese encephalitis, dengue, malaria, chikungunya }
+
+   Insect bite -> linked_to -> kala-azar 
+
+Possible causes: Based on the symptoms and geographical location, possible causes include kala-azar (visceral leishmaniasis), transmitted through an infected sandfly bite, or other vector-borne diseases like Japanese encephalitis, dengue, malaria, or chikungunya. 
+
+Diagnostic tests, including serology for kala-azar and other vector-borne diseases, and a review of the patient's travel history, are recommended to confirm the diagnosis.",0.5,0.8,0.7,0.9,0.85,0.75
+"A patient 73 years old male with symptoms a fever that started suddenly 3 days ago, along with muscle pain, headache, dizziness, neck pain and stiffness, sore eyes and light sensitivity, lives in Thiqar governorate, southeast Iraq and is livestock worker. what might be the causes of the symptoms?","1. 73 years male -> lives_in -> Thiqar governorate, southeast Iraq
+
+   73 years male -> is -> livestock worker
+
+   73 years male -> has_symptoms -> {fever, muscle pain, headache, dizziness, neck pain and stiffness, sore eyes, light sensitivity}
+
+2. Thiqar governorate, southeast Iraq -> is_a -> region with high risk of vector-borne diseases -> linked_to -> vector-borne exposures
+
+   Livestock worker -> linked_to -> zoonotic exposures
+
+   {vector-borne exposures, zoonotic exposures} -> linked_to -> {brucellosis, Q fever, scrub typhus, rickettsial infections}
+
+3. {brucellosis, Q fever, scrub typhus, rickettsial infections} -> includes -> {Brucella, Coxiella burnetii, Orientia tsutsugamushi, Rickettsia}
+
+Possible causes are brucellosis (from Brucella exposure), Q fever (from Coxiella burnetii exposure), scrub typhus (from Orientia tsutsugamushi exposure), or rickettsial infections (from Rickettsia exposure). 
+
+Diagnostic tests, including blood tests for Brucella, Coxiella burnetii, and Rickettsia, as well as serology for scrub typhus, are recommended to confirm the diagnosis.",0.8,0.9,0.85,0.7,0.82,0.82
+"A patient 47 years old female with symptoms tingling pain at the site of the bite, and has developed a fever, headache and is feeling weak, lives in rural Punjab. what might be the causes of the symptoms?","1. 47 years female -> lives_in -> rural Punjab
+
+   47 years female -> has_symptoms -> {tingling pain at the site of the bite, fever, headache, feeling weak}
+
+2. rural Punjab -> linked_to -> environmental and vector-borne exposures
+
+   Tingling pain at the site of the bite -> linked_to -> insect bites
+
+3. Environmental and vector-borne exposures -> includes -> {kala-azar, dengue, chikungunya, Japanese encephalitis}
+
+   Insect bites -> includes -> {flea, mosquito, tick} 
+
+Possible causes: based on her symptoms and location in rural Punjab, kala-azar (visceral leishmaniasis) from a sandfly bite, dengue from a mosquito bite, chikungunya from a mosquito bite, or Japanese encephalitis from a mosquito bite are potential causes.
+
+Diagnostic tests, including a bone marrow biopsy for kala-azar, blood tests for dengue and chikungunya, and a blood test for Japanese encephalitis, are recommended to confirm the diagnosis.",0.5,0.8,0.8,0.9,0.95,0.85
+"A patient 14 years old male with symptoms vomiting and has diarrhea, abdomina pain and blood in faeces, lives in Dak Lak province . what might be the causes of the symptoms?","""1. 14 years male -> lives_in -> Dak Lak province
+
+   14 years male -> has_symptoms -> {vomiting, diarrhea, abdominal pain, blood in feces }
+
+2. Dak Lak province -> is_a -> rural area -> linked_to -> water and foodborne exposures
+
+   {vomiting, diarrhea, abdominal pain, blood in feces} -> linked_to -> gastrointestinal infections
+
+3. Water and foodborne exposures -> includes -> {enteric fever, cholera, dysentery}
+
+   Gastrointestinal infections -> includes -> {salmonellosis, shigellosis, E. coli infection}
+
+Possible causes: The symptoms suggest a gastrointestinal infection, such as enteric fever, cholera, dysentery, salmonellosis, shigellosis, or E. coli infection, possibly due to contaminated food or water in the rural area of Dak Lak province.
+
+Diagnostic tests, including stool cultures for enteric pathogens (e.g., Salmonella, Shigella, E. coli) and blood tests for markers of infection (e.g., Widal test for enteric fever), are recommended to confirm the diagnosis.""",0.5,0.8,0.8,0.9,0.95,0.85
+"A patient 14 years old female with symptoms a fever, headache, nausea and general unwellness, lives in Teluk Intan and recently went on a hike to Durian Perangin waterfall. what might be the causes of the symptoms?","1. 14 years female -> lives_in -> Teluk Intan
+
+   14 years female -> recently_visited -> Durian Perangin waterfall
+
+   14 years female -> has_symptoms -> {fever, headache, nausea, general unwellness}
+
+2. Durian Perangin waterfall -> is_a -> outdoor location -> linked_to -> vector-borne exposures
+
+   Teluk Intan -> is_a -> humid region -> linked_to -> vector-borne exposures
+
+3. Vector-borne exposures -> includes -> {dengue, leptospirosis, chikungunya, Japanese encephalitis}
+
+Possible causes: Given the recent hike to the waterfall in a humid region, the patient is at risk for vector-borne illnesses like dengue, leptospirosis, chikungunya, or Japanese encephalitis.
+
+Diagnostic tests, including blood tests for dengue NS1 antigen, leptospirosis antibodies, and chikungunya IgM antibodies, are recommended to confirm the diagnosis.",0.5,0.1,0.75,0.75,0.88,0.88
+"A patient 31 years old female with symptoms a history of progressive shortness of breath, fatigue, swelling in her lower legs and feet and fainting, lives in a house made of mud and adobe in a small community in the countryside of Peru. what might be the causes of the symptoms?","1. 31 years female -> lives_in -> house made of mud and adobe in a small community in the countryside of Peru
+
+   31 years female -> has_symptoms -> {progressive shortness of breath, fatigue, swelling in her lower legs and feet, fainting }
+
+2. house made of mud and adobe in a small community in the countryside of Peru -> is_a -> rural area -> linked_to -> environmental and vector-borne exposures
+
+   31 years female -> has_exposure_to -> {chagas disease, schistosomiasis, malaria, histoplasmosis }
+
+3. Environmental and vector-borne exposures -> includes -> {chagas disease, schistosomiasis, malaria, histoplasmosis }
+
+Possible causes: The patient's symptoms and living conditions suggest exposure to environmental and vector-borne diseases such as Chagas disease, schistosomiasis, malaria, or histoplasmosis. 
+
+Diagnostic tests, including serology for Chagas disease, stool analysis for schistosomiasis, blood smear for malaria, and antigen tests for histoplasmosis, are recommended to confirm the diagnosis.",0,0.8,0.8,0.4,0.8,0.6
+"A patient 43 years old female with symptoms a fever, cough, shortness of breath, fatigue, body aches, headache, nasal congestion and nausea, lives in a retirement home in Miami, Florida. what might be the causes of the symptoms?","1. 43 years female -> lives_in -> Miami, Florida
+
+   43 years female -> lives_in -> retirement home
+
+   43 years female -> has_symptoms -> {fever, cough, shortness of breath, fatigue, body aches, headache, nasal congestion, nausea}
+
+2. {fever, cough, shortness of breath, fatigue, body aches, headache, nasal congestion, nausea} -> linked_to -> respiratory and influenza exposures
+
+   Miami, Florida -> is_a -> urban area -> linked_to -> environmental and vector-borne exposures
+
+3. respiratory and influenza exposures -> includes -> {influenza, COVID-19, pneumonia}
+
+   Environmental and vector-borne exposures -> includes -> {mosquito-borne illnesses (e.g., Zika, dengue), tick-borne illnesses (e.g., Lyme disease)}
+
+Possible causes: Based on the symptoms and the patient's living situation in a retirement home in Miami, Florida, possible causes include influenza, COVID-19, or pneumonia. Additionally, given the urban environment, it is also essential to consider mosquito-borne illnesses (e.g., Zika, dengue) and tick-borne illnesses (e.g., Lyme disease).
+
+Diagnostic tests, including a rapid influenza test, COVID-19 PCR, and chest X-ray or CT scan for pneumonia, are recommended to confirm the diagnosis.",0,0.8,0.8,0.9,0.9,0.85
+"A patient 70 years old male with symptoms fever, muscle pain, headache, loss of appetite and nausea a few days ago, which subsided, lives in Daboya in the North Gonja district. what might be the causes of the symptoms?","1. 70 years male -> lives_in -> Daboya in the North Gonja district
+
+   70 years male -> has_symptoms -> {fever, muscle pain, headache, loss of appetite, nausea}
+
+   70 years male -> symptoms_subsid -> a few days ago
+
+2. Daboya in the North Gonja district -> is_a -> rural area -> linked_to -> environmental and vector-borne exposures
+
+   Symptoms -> subsided -> suggests -> viral or bacterial infections
+
+3. Environmental and vector-borne exposures -> includes -> {malaria, dengue, yellow fever, leptospirosis}
+
+   Viral or bacterial infections -> includes -> {influenza, typhoid, meningitis}
+
+Possible causes: The subsided symptoms suggest a viral or bacterial infection, such as malaria, dengue, yellow fever, leptospirosis, influenza, typhoid, or meningitis. Given the patient's location in a rural area, vector-borne diseases like malaria and dengue are possible causes. Diagnostic tests, including blood tests for malaria and dengue, and a lumbar puncture for meningitis, are recommended to confirm the diagnosis.",0.8,0.9,0.85,0.7,0.8,0.82
+"A patient 32 years old female with symptoms a cough, fever, chills, lack of appetite and tiredness and has chronic diabetes, lives in Oyo town . what treatments might be recommended for this condition?","1. 32 years female -> has_symptoms -> {cough, fever, chills, lack of appetite, tiredness }
+
+   32 years female -> has -> chronic_diabetes
+
+   32 years female -> lives_in -> Oyo town
+
+2. {cough, fever, chills, lack of appetite, tiredness} -> linked_to -> respiratory and systemic infections
+
+   chronic_diabetes -> linked_to -> increased_risk_of_infections
+
+3. Respiratory and systemic infections -> includes -> {pneumonia, tuberculosis, respiratory syncytial virus (RSV), COVID-19 }
+
+   Increased_risk_of_infections -> linked_to -> {pneumococcal disease, invasive pneumococcal disease, influenza}
+
+Considering the patient's chronic diabetes, she is at increased risk of infections, including pneumococcal disease and invasive pneumococcal disease. 
+
+Recommended treatments may include:
+
+- Antipyretics and analgesics for symptom management
+- Antibiotics for suspected bacterial infections like pneumonia or pneumococcal disease
+- Vaccinations for pneumococcal disease and influenza, if not already up-to-date
+- COVID-19 testing, especially if symptoms started after exposure to a known COVID-19 case or in a high-risk setting
+- Close monitoring of blood glucose levels due to the increased risk of infections and potential impact on glycemic control.
+
+Click to add a cell.",0,0.8,0.8,0,0.8,0.8
